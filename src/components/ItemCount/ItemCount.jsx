@@ -1,35 +1,35 @@
-/* eslint-disable react/prop-types */
-import {useState} from 'react'
+import './ItemCount.css'; // Asegúrate de que la ruta sea correcta
+import { useState } from 'react';
 
-const ItemCount = ({stock, initial, onAdd}) => {
-    const [quantity, setQuantity] = useState(initial)
+const ItemCount = ({ stock, initial, onAdd }) => {
+    const [count, setCount] = useState(initial);
 
     const increment = () => {
-        if(quantity < stock){
-            setQuantity(quantity + 1)
+        if (count < stock) {
+            setCount(count + 1);
         }
-    }
+    };
 
     const decrement = () => {
-        if(quantity > 1){
-            setQuantity(quantity - 1)
+        if (count > 1) {
+            setCount(count - 1);
         }
-    }
+    };
 
-    return(
-        <div className='Counter'>
-            <div className='Controls'>
-                <button className='Button' onClick={decrement}> - </button>
-                <h4 className='Number'> {quantity} </h4>
-                <button className='Button' onClick={increment}> + </button>
-            </div>
-            <div>
-                <button className='Button' onClick={() => onAdd(quantity)} disabled={!stock}>
-                    Agregar al carrito
-                </button>
-            </div>
+    return (
+        <div className="ItemCount">
+            <button onClick={decrement}>-</button>
+            <span>{count}</span>
+            <button onClick={increment}>+</button>
+            <button 
+                onClick={() => onAdd(count)} 
+                disabled={stock === 0}
+            >
+                Add to Cart
+            </button>
         </div>
-    )
-}
+    );
+};
 
-export default ItemCount
+export default ItemCount;
+
