@@ -4,7 +4,6 @@ import ItemCount from '../ItemCount/ItemCount';
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     const handleAdd = (quantity) => {
         console.log('Cantidad agregada:', quantity);
-        // Aquí puedes agregar la lógica para agregar el producto al carrito
     };
 
     return (

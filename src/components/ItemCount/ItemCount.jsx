@@ -1,4 +1,4 @@
-import './ItemCount.css'; // Asegúrate de que la ruta sea correcta
+import './ItemCount.css';
 import { useState } from 'react';
 
 const ItemCount = ({ stock, initial, onAdd }) => {

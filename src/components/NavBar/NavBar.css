@@ -1,41 +1,38 @@
-/* NavBar.css */
 .NavBar {
-    background-color: #333; /* Color de fondo de la barra de navegación */
-    padding: 0.5rem 1rem; /* Espaciado interno */
-    display: flex; /* Usa flexbox para organizar los elementos */
-    justify-content: space-between; /* Espacia el título y las categorías */
-    align-items: center; /* Alinea verticalmente los elementos en el centro */
-    width: 100vw; /* Asegura que el NavBar ocupe el 100% del ancho de la ventana del navegador */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-    color: #fff; /* Color del texto */
-  }
-  
-  .NavBar h3 {
-    margin: 0; /* Elimina el margen del título */
-  }
-  
-  .Categories {
-    display: flex; /* Usa flexbox para organizar los enlaces en una fila */
-    gap: 1rem; /* Espacio entre los enlaces */
-  }
-  
-  .Option, .ActiveOption {
-    text-decoration: none; /* Elimina el subrayado */
-    color: #bbb; /* Color del texto por defecto */
-    font-weight: 500; /* Peso de la fuente */
-    padding: 0.5rem 1rem; /* Espaciado interno para los enlaces */
-    border-radius: 4px; /* Bordes redondeados */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave para los cambios de color */
-  }
-  
-  .Option:hover {
-    background-color: #555; /* Color de fondo al pasar el cursor */
-    color: #fff; /* Color del texto al pasar el cursor */
-  }
-  
-  .ActiveOption {
-    color: #007bff; /* Color del texto para el enlace activo */
-    background-color: #e7f1ff; /* Color de fondo para el enlace activo */
-    font-weight: bold; /* Negrita para el enlace activo */
-  }
-  
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.NavBar h3 {
+  margin: 0;
+}
+
+.Categories {
+  display: flex;
+  gap: 1rem;
+}
+
+.Option, .ActiveOption {
+  text-decoration: none;
+  color: #bbb;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Option:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.ActiveOption {
+  color: #007bff;
+  background-color: #e7f1ff;
+  font-weight: bold;
+}

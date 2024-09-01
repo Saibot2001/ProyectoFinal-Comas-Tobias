@@ -1,9 +1,8 @@
-/* App.css */
 .App {
-  width: 100vw; /* Asegura que el contenedor principal ocupe el 100% del ancho de la ventana del navegador */
-  height: 100vh; /* Opcional: Asegura que el contenedor ocupe el 100% de la altura de la ventana del navegador */
-  overflow-x: hidden; /* Previene el desbordamiento horizontal */
-  margin: 0; /* Elimina márgenes externos */
-  padding: 0; /* Elimina el padding interno */
-  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
